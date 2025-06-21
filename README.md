@@ -1,6 +1,6 @@
 # 📝 Todo List App (EJS + Express)
 
-A dynamic and responsive Todo List web application built with **Node.js**, **Express**, **EJS**, and **Vanilla CSS**. It allows users to create, edit, delete, and filter tasks with a clean and modern UI. The app also follows proper RESTful architecture by using HTTP `POST`, `PUT`, and `DELETE` methods via `method-override`.
+A dynamic and responsive Todo List web application built with **Node.js**, **Express**, **EJS**, and **CSS**. It allows users to create, edit, delete, and filter tasks with a clean and modern UI. The app also follows proper RESTful architecture by using HTTP `POST`, `PUT`, and `DELETE` methods via `method-override`.
 
 ---
 
