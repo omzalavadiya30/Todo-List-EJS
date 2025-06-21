@@ -34,8 +34,7 @@
         <% todos.forEach(todo => { %>
         <li data-priority="<%= todo.priority %>">
             <div class="inline-form">
-                <form action="/edit" method="POST" class="edit-form">
-                    <input type="hidden" name="id" value="<%= todo.id %>">
+                <form action="/edit/<%= todo.id %>?_method=PUT" method="POST" class="edit-form">
                     <input type="text" name="task" value="<%= todo.task %>">
                     <select name="priority">
                         <option <%= todo.priority === 'Low' ? 'selected' : '' %>>Low</option>
@@ -45,8 +44,8 @@
                     <button type="submit" class="update-btn">Update</button>
                 </form>
 
-                <form action="/delete" method="POST" class="delete-form">
-                    <input type="hidden" name="id" value="<%= todo.id %>">
+
+                <form action="/delete/<%= todo.id %>?_method=DELETE" method="POST" class="delete-form">
                     <button type="submit" class="delete-btn">Delete</button>
                 </form>
             </div>
