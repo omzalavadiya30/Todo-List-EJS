@@ -120,6 +120,14 @@ ul#todo-list li[data-priority="Low"] {
   gap: 10px;
 }
 
+.todo-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+}
+
 .edit-form {
   display: flex;
   flex-grow: 1;
@@ -136,8 +144,7 @@ ul#todo-list li[data-priority="Low"] {
   font-size: 1rem;
 }
 
-.update-btn,
-.delete-btn {
+.update-btn, .delete-btn, .edit-btn {
   min-width: 90px;
   padding: 8px 16px;
   font-size: 14px;
@@ -170,6 +177,18 @@ ul#todo-list li[data-priority="Low"] {
   background-color: #c0392b;
 }
 
+.edit-btn {
+  background-color: #16a085;
+}
+
+.edit-btn:hover {
+  background-color: #117864;
+}
+
+.todo-actions .delete-form {
+  margin: 0;
+}
+
 @media (max-width: 600px) {
   .filter-box {
     flex-direction: column;
@@ -181,7 +200,7 @@ ul#todo-list li[data-priority="Low"] {
     align-items: stretch;
   }
 
-  .update-btn, .delete-btn {
+  .update-btn, .delete-btn, .edit-btn {
     width: 100%;
   }
 }
